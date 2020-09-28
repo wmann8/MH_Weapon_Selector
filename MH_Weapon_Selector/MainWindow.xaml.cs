@@ -55,8 +55,10 @@ namespace MH_Weapon_Selector
             //makes at lease one revolution but this is not always true
 
             int newAngle;
-
-                newAngle = rnd.Next((vm.AngleValue + 360), (vm.AngleValue + 3600));
+                
+                //Wyatt: I decided to try simplifying this part a bit. I *believe* that this should guarantee
+                //that not only will the min and max work "properly" but that it will always rotate clockwise.
+                newAngle = rnd.Next(vm.AngleValue + 360, vm.AngleValue + 3600);
 
             vm.AngleValue = newAngle;
         }
