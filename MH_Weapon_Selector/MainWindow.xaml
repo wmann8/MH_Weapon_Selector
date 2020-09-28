@@ -8,14 +8,10 @@
         Title="MHGU Weapon Wheel" Height="450" Width="500">
     <Grid Background="#444">
         <Grid>
-            <Image x:Name="Wheel" Source="pack://application:,,,/MH_Spinning_Wheel/Wheel.png" RenderTransformOrigin="0.5, 0.5"
+            <Image x:Name="Wheel" Source="pack://application:,,,/MH_Spinning_Wheel/Wheel.png" RenderTransformOrigin="0.478,0.508"
                    Tag="{Binding AngleValue, UpdateSourceTrigger=PropertyChanged,NotifyOnTargetUpdated=True}">
                 <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
-                        <TranslateTransform X="10" Y="-5"/>
                         <RotateTransform Angle="{Binding AngleValue}" CenterX="0" CenterY="0"/>
-                    </TransformGroup>
                 </Image.RenderTransform>
                 <Image.Triggers>
                     <EventTrigger RoutedEvent="Binding.TargetUpdated">
@@ -40,7 +36,7 @@
                 <Image.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="0.5" ScaleY="0.5"/>
-                        <TranslateTransform X="135" Y="-90"/>
+                        <TranslateTransform X="125" Y="-70"/>
                     </TransformGroup>
                 </Image.RenderTransform>
                 
