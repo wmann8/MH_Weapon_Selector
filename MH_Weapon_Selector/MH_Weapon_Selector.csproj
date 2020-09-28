@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MH_Spinning_Wheel\Wheel.png" />
+    <None Remove="MH_Spinning_Wheel\Wheel_Indicator.png" />
+    <None Remove="Wheel.png" />
+    <None Remove="Wheel_Indicator.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="MH_Spinning_Wheel\Wheel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MH_Spinning_Wheel\Wheel_Indicator.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Wheel.png" />
+    <Resource Include="Wheel_Indicator.png" />
+  </ItemGroup>
+
+</Project>
